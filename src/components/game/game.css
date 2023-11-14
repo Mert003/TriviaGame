@@ -1,0 +1,62 @@
+.GameContainer{
+    width: 50%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.boardPicture{
+    object-fit: cover;
+    width: 75%;
+}
+.GameQuestion{
+    color: white;
+    margin: 0 auto;
+}
+.GameOptions{
+    margin-right: 5px;
+    border:1px solid black;
+    border-radius: 20px;
+    width: auto;
+    font-size: larger;
+    font-weight: 600;
+    height: 50px;
+    margin-top:15px;
+    transition: 1s;
+    min-width: 50px;
+}
+.GameOptions:hover{
+    background-color: goldenrod;
+    cursor: pointer;
+   transform: scale(1.2,1.2);
+   
+}
+
+@media screen and (max-width:768px){
+    .GameQuestion{
+        font-size: medium;
+    }
+    .GameOptions{
+        font-size: small;
+    }
+    .GameContainer{
+        margin-top: 5px;
+        width: 75%;
+    }
+   
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .GameQuestion{
+        font-size: large;
+    }
+    .GameOptions{
+        font-size: medium;
+    }
+    .GameContainer{
+        margin-top: 15px;
+        width: 60%;
+    }
+  
+    
+}
